@@ -22,4 +22,4 @@ const marioPosition = +window.getComputedStyle(mario).bottom.replace("px", "");
         mario.style.left = `${marioPositon}px`;
     } 
 })
-document.addEventListener("keydown",jump) 
+document.addEventListener("keydown", jump) 
