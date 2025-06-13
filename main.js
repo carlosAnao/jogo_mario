@@ -7,7 +7,7 @@ const jump = () => {
     setTimeout(() => {
         mario.classList.remove("jump");
     }
-    ,500)
+    ,500);
 }
 
 const loop = setInterval(() => {
@@ -15,11 +15,14 @@ const pipePosition = pipe.offsetLeft;
 const marioPosition = +window.getComputedStyle(mario).bottom.replace("px", "");
 
     if(pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
-        pipe.style.animation = "none"
+        pipe.style.animation = "none";
         pipe.style.left = `${pipePosition}px`;
 
-        mario.Style.animation = "none"
-        mario.style.left = `${marioPositon}px`;
-    } 
+        mario.style.animation = "none";
+        mario.style.left = `${marioPosition}px`;
+    }
 })
-document.addEventListener("keydown", jump) 
+document.addEventListener("keydown", jump);
+
+
+  
